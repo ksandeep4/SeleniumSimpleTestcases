@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="105283" started-at="2020-05-10T16:51:20Z" finished-at="2020-05-10T16:53:05Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="105283" started-at="2020-05-10T16:51:20Z" finished-at="2020-05-10T16:53:05Z">
+      <class name="com.training.sanity.tests.Eltc019ElearningAdminViewDetails">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.Eltc019ElearningAdminViewDetails@1b083826]" name="setUpBeforeClass" is-config="true" duration-ms="11" started-at="2020-05-10T22:21:20Z" finished-at="2020-05-10T22:21:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.Eltc019ElearningAdminViewDetails@1b083826]" name="setUp" is-config="true" duration-ms="26395" started-at="2020-05-10T22:21:20Z" finished-at="2020-05-10T22:21:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.Eltc019ElearningAdminViewDetails@1b083826]" name="validLoginTest" duration-ms="57907" started-at="2020-05-10T22:21:46Z" finished-at="2020-05-10T22:22:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="adminPage()[pri:0, instance:com.training.sanity.tests.Eltc019ElearningAdminViewDetails@1b083826]" name="adminPage" duration-ms="3570" started-at="2020-05-10T22:22:44Z" finished-at="2020-05-10T22:22:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminPage -->
+        <test-method status="PASS" signature="userLink()[pri:0, instance:com.training.sanity.tests.Eltc019ElearningAdminViewDetails@1b083826]" name="userLink" duration-ms="4992" started-at="2020-05-10T22:22:48Z" finished-at="2020-05-10T22:22:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLink -->
+        <test-method status="PASS" signature="uName()[pri:0, instance:com.training.sanity.tests.Eltc019ElearningAdminViewDetails@1b083826]" name="uName" duration-ms="8819" started-at="2020-05-10T22:22:53Z" finished-at="2020-05-10T22:23:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uName -->
+        <test-method status="PASS" signature="editIcon()[pri:0, instance:com.training.sanity.tests.Eltc019ElearningAdminViewDetails@1b083826]" name="editIcon" duration-ms="2213" started-at="2020-05-10T22:23:01Z" finished-at="2020-05-10T22:23:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editIcon -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Eltc019ElearningAdminViewDetails@1b083826]" name="tearDown" is-config="true" duration-ms="1344" started-at="2020-05-10T22:23:04Z" finished-at="2020-05-10T22:23:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.sanity.tests.Eltc019ElearningAdminViewDetails -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
