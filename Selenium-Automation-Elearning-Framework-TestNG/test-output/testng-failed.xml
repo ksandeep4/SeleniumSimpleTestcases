@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.training.sanity.tests.Eltc019ElearningAdminViewDetails">
+      <class name="com.training.sanity.tests.Eltc046TeacherTaskandStudentComment">
         <methods>
-          <include name="uName"/>
+          <include name="tearDown"/>
           <include name="setUpBeforeClass"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="studentaddComment"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.Eltc019ElearningAdminViewDetails -->
+      </class> <!-- com.training.sanity.tests.Eltc046TeacherTaskandStudentComment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
