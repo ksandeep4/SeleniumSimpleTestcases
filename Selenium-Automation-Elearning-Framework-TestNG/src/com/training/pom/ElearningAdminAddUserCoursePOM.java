@@ -27,6 +27,15 @@ public class ElearningAdminAddUserCoursePOM {
 	 
 	}*/
 
+	
+	//List<WebElement> firstLetter=driver.findElements(By.xpath("//select[@name='firstLetterUser']"));
+	@FindBy(xpath = "//select[@name='firstLetterUser']")
+	public WebElement lnfirstletter;
+	
+	//driver.findElement(By.xpath("//option[contains(text(),'"+fullname+"')]")).click();
+	@FindBy(xpath = "//option[contains(text(),'\"+fullname+\"')]")
+	private WebElement fullname;
+	
 		public void addUserCourse() {
 		// TODO Auto-generated method stub
 		this.addUserCourse.click();
@@ -34,4 +43,19 @@ public class ElearningAdminAddUserCoursePOM {
 		public void addUserCoursebtn() {
 		addUserCoursebtn.click();
 }
+/*
+ * public WebElement lnfirstletter() { return this.lnfirstletter(); }
+ */
+		
+			public void fullname(String fullname) {
+			// TODO Auto-generated method stub
+			this.fullname.sendKeys(fullname);
+		}
+			public WebElement lnfirstletter() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+	
+		
+		
 }

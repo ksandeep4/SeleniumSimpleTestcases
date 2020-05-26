@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -54,7 +55,8 @@ public class ApachePOIExcelRead {
 					switch (cell.getCellType()) {
 
 					case Cell.CELL_TYPE_NUMERIC:
-							tempList.add(((Double) cell.getNumericCellValue()).toString()); 
+						tempList.add(NumberToTextConverter.toText(cell.getNumericCellValue()));	
+						//tempList.add(((Double) cell.getNumericCellValue()).toString()); 
 						break;
 					case Cell.CELL_TYPE_STRING:
 							tempList.add(cell.getStringCellValue());
@@ -78,10 +80,11 @@ public class ApachePOIExcelRead {
 
 	public static void main(String[] args) {
 		String fileName = "C:\\Users\\SandeepKachneria\\Desktop\\Selenium\\Project\\data\\elearninglogin.xlsx";
+		//String fileName ="C:\\Users\\SandeepKachneria\\Desktop\\Selenium\\Project\\data\\elearningadduser.xlsx"; 
 		
-		for(List<Object> temp : getExcelContent(fileName)){
-					System.out.println(temp.get(0) + "," + temp.get(1));
+		//for(List<Object> temp : getExcelContent(fileName)){
+				//	System.out.println(temp.get(0) + "," + temp.get(1));
 			}
 		}
 
-	}
+	

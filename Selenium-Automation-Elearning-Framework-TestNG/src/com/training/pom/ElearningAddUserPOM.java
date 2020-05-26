@@ -1,6 +1,7 @@
 package com.training.pom;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -41,6 +42,13 @@ public class ElearningAddUserPOM {
 
 	@FindBy(xpath = "//a[contains(text(),'Add a user')]")
 	private WebElement addUserLink;
+	
+	@FindBy(xpath = "//div[10]//div[1]//div[1]//button[1]//span[1]//span[1]")
+	private WebElement selectRole;
+	
+	@FindBy(xpath = "//div[@class='dropdown bootstrap-select form-control dropup open']//input[@class='form-control']")
+	private WebElement sendRole;
+	
 
 	public void lastName(String lastName) throws InterruptedException {
 		Thread.sleep(0500);
@@ -96,8 +104,9 @@ public class ElearningAddUserPOM {
 		this.addBtn.click();
 	}
 
-	public void addUserLink() {
+	public void addUserLink() throws InterruptedException {
 		// TODO Auto-generated method stub
+		Thread.sleep(0500);
 		this.addUserLink.click();
 	}
 
@@ -106,6 +115,20 @@ public class ElearningAddUserPOM {
 		Thread.sleep(0500);
 		this.firstName.clear();
 		this.firstName.sendKeys(firstName);
+	}
+
+	public void selectRole() {
+		// TODO Auto-generated method stub
+		this.selectRole.click();
+	}
+
+	public void sendRole(String role) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		Thread.sleep(0500);
+		this.sendRole.sendKeys(role);
+		Thread.sleep(0500);
+		this.sendRole.sendKeys(Keys.ENTER);
 	}
 
 }
